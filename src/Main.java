@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Manager manager = new Manager();
 
-        DatabaseHelper.createTables();
+        DatabaseHelper.createTables();//
 
         while (true) {
             try {
