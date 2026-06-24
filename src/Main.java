@@ -9,24 +9,24 @@ public class Main {
 
         while (true) {
             try {
-                System.out.println("\n1. Start Session");
-                System.out.println("2. End Session");
-                System.out.println("3. Generate Report");
-                System.out.println("4. Exit");
+                System.out.println("\n1 start session");
+                System.out.println("2 end ");
+                System.out.println("3 report to manager ");
+                System.out.println("4 finsishh");
 
                 int choice = sc.nextInt();
                 sc.nextLine();
 
                 switch (choice) {
                     case 1:
-                        System.out.print("Enter name: ");
+                        System.out.print("ur name: ");
                         String name = sc.nextLine();
 
-                        System.out.print("Enter station ID: ");
+                        System.out.print("which station : ");
                         int stationId = sc.nextInt();
                         sc.nextLine();
 
-                        System.out.print("Customer type (1 = Regular, 2 = Discount): ");
+                        System.out.print("customer typer if u are regular 1 and if u on discounted list 2: ");
                         int type = sc.nextInt();
                         sc.nextLine();
 
@@ -34,11 +34,11 @@ public class Main {
                         break;
 
                     case 2:
-                        System.out.print("Enter station ID: ");
+                        System.out.print("which station : ");
                         int endId = sc.nextInt();
                         sc.nextLine();
 
-                        System.out.print("How many games played? ");
+                        System.out.print("how many games u played ");
                         int games = sc.nextInt();
                         sc.nextLine();
 
@@ -54,7 +54,7 @@ public class Main {
                         System.exit(0);
 
                     default:
-                        throw new InvalidInputException("Invalid choice");
+                        throw new InvalidInputException("invalid choice");
                 }
 
             } catch (Exception e) {

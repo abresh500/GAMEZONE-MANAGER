@@ -30,7 +30,7 @@ public class DatabaseHelper {
     }
 
     public static void insertSession(String name, double price) {
-        String sql = "INSERT INTO sessions(customer_name, price) VALUES(?, ?)";
+        String sql = "insert into sessions(customer_name, price) VALUES(?, ?)";
 
         try (Connection conn = connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
