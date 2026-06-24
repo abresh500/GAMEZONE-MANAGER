@@ -24,14 +24,25 @@ public class Main {
 
                         System.out.print("Enter station ID: ");
                         int stationId = sc.nextInt();
+                        sc.nextLine();
 
-                        manager.startSession(name, stationId);
+                        System.out.print("Customer type (1 = Regular, 2 = Discount): ");
+                        int type = sc.nextInt();
+                        sc.nextLine();
+
+                        manager.startSession(name, stationId, type);
                         break;
 
                     case 2:
                         System.out.print("Enter station ID: ");
                         int endId = sc.nextInt();
-                        manager.endSession(endId);
+                        sc.nextLine();
+
+                        System.out.print("How many games played? ");
+                        int games = sc.nextInt();
+                        sc.nextLine();
+
+                        manager.endSession(endId, games);
                         break;
 
                     case 3:

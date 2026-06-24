@@ -8,10 +8,11 @@ public class Session {
     public Session(Customer customer, Station station) {
         this.customer = customer;
         this.station = station;
-
         customer.incrementSessions();
-        this.price = customer.calculatePrice();
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
         totalRevenue += price;
     }
 
